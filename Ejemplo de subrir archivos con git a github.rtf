@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww30460\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 EJEMPLO DE COMO SUBIR INFORMACI\'d3N DE GIT A GITHUB\
+\
+0) CREAR REPOSITORIO NUEVO EN GITHUB (EN ESTE CASO ES prac). Para evitar errores, no iniciales el nuevo repositorio con archivos READMe licencia o gitingnore. Puedes agregar los archivos despu\'e9s.\
+00) ABRIR TERMINAL\
+\
+A) Cambiar al directorio donde est\'e1 la info que quiero subir a GITHUB:\
+NOTA: PUEDE SER DESDE FINDER, Y CON EL MOUSE SE DEJA CAER LA UBICACION EN LA TERMINAL!\
+\
+\
+josealfredocarrillosalazar@iMac-de-Jose ~ % cd /Users/josealfredocarrillosalazar/Documents/CourseProgpythonjava/Lecture8_Programs/src8/airline3\
+\
+B) Inicializar el directorio local como un repositorio de Git\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git init\
+Reinicializado el repositorio Git existente en /Users/josealfredocarrillosalazar/Documents/CourseProgpythonjava/Lecture8_Programs/src8/airline3/.git/\
+\
+C) Agregar los archivos a tu nuevo respositorio local\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git add .\
+\
+D) Confirmar los archivos que has preparado en tu respositorio local\
+\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git commit -m "First"\
+En la rama master\
+nada para hacer commit, el \'e1rbol de trabajo est\'e1 limpio\
+\
+E) En la parte superior de la p\'e1gina de configuraci\'f3n r\'e1pida del repositorio de Github, haz clic en el portapapeles para copiar el URK del repositorio remoto (git@github.com:JRTerrier/prac.git) y se pega en terminal precedido de git remote add origin\
+\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git remote add origin git@github.com:JRTerrier/prac.git\
+\
+F)Verifica el nuevo URL remoto\
+\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git remote -v\
+origin	git@github.com:JRTerrier/prac.git (fetch)\
+origin	git@github.com:JRTerrier/prac.git (push)\
+prac	git@github.com:JRTerrier/prac.git (fetch)\
+prac	git@github.com:JRTerrier/prac.git (push)\
+\
+G) Sube los cambios a tu repositorio local a GitHub\
+\
+\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % git push -u origin master\
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.\
+Enter passphrase for key '/Users/josealfredocarrillosalazar/.ssh/id_rsa': \
+Enumerando objetos: 31, listo.\
+Contando objetos: 100% (31/31), listo.\
+Compresi\'f3n delta usando hasta 4 hilos\
+Comprimiendo objetos: 100% (25/25), listo.\
+Escribiendo objetos: 100% (31/31), 13.39 KiB | 3.35 MiB/s, listo.\
+Total 31 (delta 1), reusado 0 (delta 0), pack-reusado 0\
+remote: Resolving deltas: 100% (1/1), done.\
+To github.com:JRTerrier/prac.git\
+ * [new branch]      master -> master\
+Rama 'master' configurada para hacer seguimiento a la rama remota 'master' de 'origin'.\
+\
+\
+josealfredocarrillosalazar@iMac-de-Jose airline3 % }
